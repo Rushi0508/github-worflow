@@ -15,5 +15,5 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: ftp.github-workflow.42web.io
-        username: if0_35673475
+        username: if0_35673475@github-workflow.42web.io
         password: IangrlU1gYeEY
