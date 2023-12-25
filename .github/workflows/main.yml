@@ -14,7 +14,7 @@ jobs:
     - name:  Sync files
       uses: SamKirkland/FTP-Deploy-Action@v2.0.0
       env:
-        FTP_SERVER: ftp.github-workflow.42web.io
+        FTP_SERVER: ftpupload.net
         FTP_USERNAME: if0_35673475@github-workflow.42web.io
         FTP_PASSWORD: IangrlU1gYeEY
         LOCAL_DIR: /
