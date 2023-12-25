@@ -12,8 +12,14 @@ jobs:
       uses: actions/checkout@v3
     
     - name:  Sync files
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-      with:
-        server: ftp.github-workflow.42web.io
-        username: if0_35673475@github-workflow.42web.io
-        password: IangrlU1gYeEY
+      uses: SamKirkland/FTP-Deploy-Action@v2.0.0
+      env:
+        FTP_SERVER: ftp.github-workflow.42web.io
+        FTP_USERNAME: if0_35673475@github-workflow.42web.io
+        FTP_PASSWORD: IangrlU1gYeEY
+        LOCAL_DIR: /
+        REMOTE_DIR: /home/vol6_7/infinityfree.com/if0_35673475
+        METHOD: sftp
+        PORT: 21
+        ARGS: --verbose
+        
